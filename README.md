@@ -1203,7 +1203,7 @@ jobs:
 
 <img src="img/0.png">
 
-5. Создание секретов в репозитории devops-diplom-app:
+5. Создание секретов в репозитории my-diplom-app:
 
 <img src="img/0.png">
 
@@ -1322,7 +1322,7 @@ jobs:
 [pipeline](https://github.com/kshatyy/my-diplom/blob/main/.github/workflows/terraform.yml)
 
 
-## Репозиторий devops-diplom-app
+## Репозиторий my-diplom-app
 
 [Dockerfile](https://github.com/kshatyy/my-diplom-app/blob/main/Dockerfile)
 
@@ -1330,12 +1330,12 @@ jobs:
 
 [k8s](https://github.com/kshatyy/my-diplom-app/tree/main/k8s)
 
-[pipeline](https://github.com/kshatyy/my-diplom-app/blob/main/.github/workflows/build-pull-deploy.yml)
+[pipeline](https://github.com/kshatyy/my-diplom-app/blob/main/.github/workflows/docker-image-ci.yml)
 
 
 ---
 
-В результате проведенной работы, при каждом коммите в ветку main репозитория devops-diplom автоматически разворачиваются следующие ресурсы:
+В результате проведенной работы, при каждом коммите в ветку main репозитория my-diplom автоматически разворачиваются следующие ресурсы:
 
 1. Инфраструктура в Yandex Cloud
 2. Кластер Kubernetes
