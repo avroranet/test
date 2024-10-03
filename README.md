@@ -362,40 +362,38 @@ all:
     become: true
     ansible_python_interpreter: /usr/bin/python3
 
+  hosts: 
+    %{~ for instance in masters + workers ~}
+    ${instance["name"]}:
+      ansible_host: ${instance["network_interface"][0]["nat_ip_address"] == "" ? instance["network_interface"][0]["ip_address"] : instance["network_interface"][0]["nat_ip_address"]}
+      ip: ${instance["network_interface"][0]["ip_address"]}
+      access_ip: ${instance["network_interface"][0]["ip_address"]}
+    %{~ endfor ~}
 
-  hosts:
-    %{~ for i in masters ~}
-    ${i["name"]}:
-      ansible_host: ${i["network_interface"][0]["nat_ip_address"] == "" ? i["network_interface"][0]["ip_address"] : i["network_interface"][0]["nat_ip_address"]}
-      ip: ${i["network_interface"][0]["ip_address"]}
-      access_ip: ${i["network_interface"][0]["ip_address"]}
-    %{~ endfor ~}
-    %{~ for i in workers ~}
-    ${i["name"]}:
-      ansible_host: ${i["network_interface"][0]["nat_ip_address"] == "" ? i["network_interface"][0]["ip_address"] : i["network_interface"][0]["nat_ip_address"]}
-      ip: ${i["network_interface"][0]["ip_address"]}
-      access_ip: ${i["network_interface"][0]["ip_address"]}
-    %{~ endfor ~}
   children:
     kube_control_plane:
       hosts:
-      %{~ for i in masters ~}
-        ${i["name"]}:
-      %{~ endfor ~}
+        %{~ for master in masters ~}
+        ${master["name"]}:
+        %{~ endfor ~}
+        
     kube_node:
       hosts:
-      %{~ for i in workers ~}
-        ${i["name"]}:
-      %{~ endfor ~}
+        %{~ for worker in workers ~}
+        ${worker["name"]}:
+        %{~ endfor ~}
+
     etcd:
       hosts:
-      %{~ for i in masters ~}
-        ${i["name"]}:
-      %{~ endfor ~}
+        %{~ for master in masters ~}
+        ${master["name"]}:
+        %{~ endfor ~}
+
     k8s_cluster:
       children:
         kube_control_plane:
         kube_node:
+
     calico_rr:
       hosts: {}
 
