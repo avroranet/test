@@ -1074,7 +1074,7 @@ output "App_address" {
 
 <img src="img/19.png">
 
-10. Перейдем по указанному адресу, введем стандартные учетные данные admin/admin и откроем дашборд ```Kubernetes / Compute Resources / Node (Pods)```:
+10. Перейдем по указанному адресу, введем стандартные учетные данные admin/admin123 и откроем дашборд ```Kubernetes / Compute Resources / Node (Pods)```:
 
 <img src="img/10.png">
 
