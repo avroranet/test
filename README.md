@@ -1309,31 +1309,32 @@ jobs:
 
 <table>
 <tr>
-<td align="center">
+<td>
 
 ## Репозиторий my-diplom
 
-- [terraform-prepare](https://github.com/kshatyy/my-diplom/tree/main/terraform)  
-- [terraform](https://github.com/kshatyy/my-diplom/tree/main/terraform)  
-- [ansible](https://github.com/kshatyy/my-diplom/tree/main/ansible)  
-- [docker](https://github.com/kshatyy/my-diplom/tree/main/docker)  
-- [k8s](https://github.com/kshatyy/my-diplom/tree/main/k8s)  
-- [pipeline](https://github.com/kshatyy/my-diplom/blob/main/.github/workflows/terraform.yml)  
+- [terraform-prepare](https://github.com/kshatyy/my-diplom/tree/main/terraform)
+- [terraform](https://github.com/kshatyy/my-diplom/tree/main/terraform)
+- [ansible](https://github.com/kshatyy/my-diplom/tree/main/ansible)
+- [docker](https://github.com/kshatyy/my-diplom/tree/main/docker)
+- [k8s](https://github.com/kshatyy/my-diplom/tree/main/k8s)
+- [pipeline](https://github.com/kshatyy/my-diplom/blob/main/.github/workflows/terraform.yml)
 
 </td>
-<td align="center">
+<td>
 
 ## Репозиторий my-diplom-app
 
-- [Dockerfile](https://github.com/kshatyy/my-diplom-app/blob/main/Dockerfile)  
-- [index.html](https://github.com/kshatyy/my-diplom-app/blob/main/index.html)  
-- [k8s](https://github.com/kshatyy/my-diplom-app/tree/main/k8s)  
-- [pipeline](https://github.com/kshatyy/my-diplom-app/blob/main/.github/workflows/docker-image-ci.yml)  
-
+- [Dockerfile](https://github.com/kshatyy/my-diplom-app/blob/main/Dockerfile)
+- [index.html](https://github.com/kshatyy/my-diplom-app/blob/main/index.html)
+- [k8s](https://github.com/kshatyy/my-diplom-app/tree/main/k8s)
+- [pipeline](https://github.com/kshatyy/my-diplom-app/blob/main/.github/workflows/docker-image-ci.yml)
+- []
+- []
+  
 </td>
 </tr>
 </table>
-
 
 ---
 
