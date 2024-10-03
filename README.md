@@ -1076,7 +1076,7 @@ output "App_address" {
 
 10. Перейдем по указанному адресу, введем стандартные учетные данные admin/admin123 и откроем дашборд ```Kubernetes / Compute Resources / Node (Pods)```:
 
-<img src="img/10.png">
+<img src="img/10.jpg">
 
 11. Проверим, какие ресурсы были созданы в Yandex Cloud:
 
