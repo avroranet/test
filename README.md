@@ -1192,11 +1192,11 @@ jobs:
       run: |
         my_registry_id=$(grep 'my_registry_id:'  k8s/tf_outputs.yml | cut -d ' ' -f 2)
         echo $my_registry_id
-        gh secret set MY_REGISTRY_ID --body $my_registry_id --repo LexionN/devops-diplom-app
+        gh secret set MY_REGISTRY_ID --body $my_registry_id --repo kshatyy/my-diplom-app
         K8S_address=$(grep 'K8S_address:'  k8s/tf_outputs.yml | cut -d ' ' -f 2)
         sed -i "s/127.0.0.1:6443/$K8S_address/g" k8s/kube-config
         kube_config=$(base64 < k8s/kube-config | tr -d '\n' | sed -e 's/^[ \t]*//' -e 's/[ \t]*$//')
-        gh secret set KUBE_CONFIG --body $kube_config --repo LexionN/devops-diplom-app
+        gh secret set KUBE_CONFIG --body $kube_config --repo kshatyy/my-diplom-app
 ```
 
 4. Проверка работы пайплайна:
@@ -1309,28 +1309,28 @@ jobs:
 
 ## Ссылки на конфигурационные файлы:
 ## Репозиторий my-diplom
-[terraform-prepare](https://github.com/LexionN/devops-diplom/tree/main/terraform)
+[terraform-prepare](https://github.com/kshatyy/my-diplom/tree/main/terraform)
 
-[terraform](https://github.com/LexionN/devops-diplom/tree/main/terraform)
+[terraform](https://github.com/kshatyy/my-diplom/tree/main/terraform)
 
-[ansible](https://github.com/LexionN/devops-diplom/tree/main/ansible)
+[ansible](https://github.com/kshatyy/my-diplom/tree/main/ansible)
 
-[docker](https://github.com/LexionN/devops-diplom/tree/main/docker)
+[docker](https://github.com/kshatyy/my-diplom/tree/main/docker)
 
-[k8s](https://github.com/LexionN/devops-diplom/tree/main/k8s)
+[k8s](https://github.com/kshatyy/my-diplom/tree/main/k8s)
 
-[pipeline](https://github.com/LexionN/devops-diplom/blob/main/.github/workflows/terraform.yml)
+[pipeline](https://github.com/kshatyy/my-diplom/blob/main/.github/workflows/terraform.yml)
 
 
 ## Репозиторий devops-diplom-app
 
-[Dockerfile](https://github.com/LexionN/devops-diplom-app/blob/main/Dockerfile)
+[Dockerfile](https://github.com/kshatyy/my-diplom-app/blob/main/Dockerfile)
 
-[index.html](https://github.com/LexionN/devops-diplom-app/blob/main/index.html)
+[index.html](https://github.com/kshatyy/my-diplom-app/blob/main/index.html)
 
-[k8s](https://github.com/LexionN/devops-diplom-app/tree/main/k8s)
+[k8s](https://github.com/kshatyy/my-diplom-app/tree/main/k8s)
 
-[pipeline](https://github.com/LexionN/devops-diplom-app/blob/main/.github/workflows/build-pull-deploy.yml)
+[pipeline](https://github.com/kshatyy/my-diplom-app/blob/main/.github/workflows/build-pull-deploy.yml)
 
 
 ---
