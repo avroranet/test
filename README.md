@@ -1329,8 +1329,8 @@ jobs:
 - [index.html](https://github.com/kshatyy/my-diplom-app/blob/main/index.html)
 - [k8s](https://github.com/kshatyy/my-diplom-app/tree/main/k8s)
 - [pipeline](https://github.com/kshatyy/my-diplom-app/blob/main/.github/workflows/docker-image-ci.yml)
-- []
-- []
+
+
   
 </td>
 </tr>
