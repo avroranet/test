@@ -186,9 +186,9 @@ yandex_vpc_network.network_vpc: Destruction complete after 0s
 
 Также предоставим скриншоты созданных ресурсов для подтверждения:
 
-<img src="img/0.png">
+<img src="img/1.png">
 
-<img src="img/0.png">
+<img src="img/2.png">
 
 
 
@@ -541,11 +541,11 @@ resource "null_resource" "install-k8s" {
     
 15. Проверка созданных инстансов:
 
-<img src="img/0.png">
+<img src="img/3.png">
 
 16. Обзор сетевой схемы:
 
-<img src="img/0.png">
+<img src="img/4.png">
 
 
 17. Вот как будет выглядеть наш inventory:
@@ -600,12 +600,12 @@ all:
 
 18. Подключаемся к мастер-узлу и проверяем состояние узлов от имени пользователя ubuntu:
 
-<img src="img/0.png">
+<img src="img/20.png">
 
 
 19. Теперь мы можем проверить состояние подов в кластере:
 
-<img src="img/0.png">
+<img src="img/21.png">
 
 
 
@@ -632,7 +632,7 @@ all:
 
 1. Создание отдельного репозитория на GitHub:
 
-<img src="img/0.png">
+<img src="img/5.png">
 
 2. Далее создадим HTML-страницу для конфигурации Nginx:
 
@@ -762,7 +762,7 @@ resource "local_file" "registry_id_file" {
 5. Выполним команду ```terraform apply``` для применения изменений.
 6. Проверка результатов в консоли управления Yandex Cloud:
 
-<img src="img/0.png">
+<img src="img/6.png">
 
 
 
@@ -1072,15 +1072,15 @@ output "App_address" {
 
 9. Результаты развертывания:
 
-<img src="img/0.png">
+<img src="img/7.png">
 
 10. Перейдем по указанному адресу, введем стандартные учетные данные admin/admin и откроем дашборд ```Kubernetes / Compute Resources / Node (Pods)```:
 
-<img src="img/0.png">
+<img src="img/8.png">
 
 11. Проверим, какие ресурсы были созданы в Yandex Cloud:
 
-<img src="img/0.png">
+<img src="img/9.png">
 
 
 ---
@@ -1106,7 +1106,7 @@ output "App_address" {
 
 1. Создание необходимых секретов в репозитории my-diplom:
 
-<img src="img/0.png">
+<img src="img/10.png">
 
 2. Настроим workflow для CI/CD с помощью Terraform:
 
@@ -1199,11 +1199,11 @@ jobs:
 
 4. Проверка работы пайплайна:
 
-<img src="img/0.png">
+<img src="img/11.png">
 
 5. Создание секретов в репозитории my-diplom-app:
 
-<img src="img/0.png">
+<img src="img/12.png">
 
 6. Определим pipeline для CI Docker образов:
 
@@ -1342,26 +1342,26 @@ jobs:
 5. Запуск приложения в кластере Kubernetes
 6. Передача данных в секреты репозитория my-diplom-app
 
-<img src="img/0.png">
+<img src="img/13.png">
 
 
 В репозитории my-diplom-app, при создании нового тега происходит сборка и отправка образа с тегом в реестр приложения, а также развертывание соответствующего приложения в Kubernetes.
 
-<img src="img/0.png">
+<img src="img/14.png">
 
 
 Начальное состояние выглядит следующим образом:
 
-<img src="img/0.png">
+<img src="img/15.png">
 
 После изменения тега на v1.0.0 и обновления страницы через минуту, мы получаем:
 
-<img src="img/0.png">
+<img src="img/16.png">
 
 
 Также обновляется интерфейс Grafana:
 
-<img src="img/0.png">
+<img src="img/17.png">
 
 ---
 ### Ссылки на ресурсы:
