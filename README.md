@@ -1306,7 +1306,13 @@ jobs:
 ---
 
 ## Ссылки на конфигурационные файлы:
+
+<table>
+<tr>
+<td>
+
 ## Репозиторий my-diplom
+
 [terraform-prepare](https://github.com/kshatyy/my-diplom/tree/main/terraform)
 
 [terraform](https://github.com/kshatyy/my-diplom/tree/main/terraform)
@@ -1319,6 +1325,8 @@ jobs:
 
 [pipeline](https://github.com/kshatyy/my-diplom/blob/main/.github/workflows/terraform.yml)
 
+</td>
+<td>
 
 ## Репозиторий my-diplom-app
 
@@ -1329,6 +1337,10 @@ jobs:
 [k8s](https://github.com/kshatyy/my-diplom-app/tree/main/k8s)
 
 [pipeline](https://github.com/kshatyy/my-diplom-app/blob/main/.github/workflows/docker-image-ci.yml)
+
+</td>
+</tr>
+</table>
 
 
 ---
